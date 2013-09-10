@@ -9,6 +9,12 @@ I am a command line client for the [Transit
 npm install -g transitandtrails-cli
 ```
 
+Or, if you want the current development version:
+
+```bash
+npm install -g "git+https://github.com/mojodna/node-transitandtrails-cli"
+```
+
 ## Usage
 
 ```bash
