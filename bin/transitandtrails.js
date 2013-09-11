@@ -32,6 +32,11 @@ require("../lib/commands/trailhead-attributes")(program, tnt);
 require("../lib/commands/trailhead-maps")(program, tnt);
 require("../lib/commands/trailhead-photos")(program, tnt);
 require("../lib/commands/trailheads")(program, tnt);
+require("../lib/commands/trip")(program, tnt);
+require("../lib/commands/trip-attributes")(program, tnt);
+require("../lib/commands/trip-maps")(program, tnt);
+require("../lib/commands/trip-photos")(program, tnt);
+require("../lib/commands/trips")(program, tnt);
 
 try {
   program.parse(process.argv);
