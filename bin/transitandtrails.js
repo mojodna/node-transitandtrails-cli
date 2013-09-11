@@ -37,6 +37,8 @@ require("../lib/commands/trip-attributes")(program, tnt);
 require("../lib/commands/trip-maps")(program, tnt);
 require("../lib/commands/trip-photos")(program, tnt);
 require("../lib/commands/trips")(program, tnt);
+require("../lib/commands/user")(program, tnt);
+require("../lib/commands/users")(program, tnt);
 
 try {
   program.parse(process.argv);
