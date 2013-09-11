@@ -22,6 +22,7 @@ program
     tnt.key = key;
   });
 
+require("../lib/commands/attribute-categories")(program, tnt);
 require("../lib/commands/campground")(program, tnt);
 require("../lib/commands/campground-attributes")(program, tnt);
 require("../lib/commands/campground-maps")(program, tnt);
