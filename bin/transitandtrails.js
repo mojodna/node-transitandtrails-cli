@@ -22,6 +22,11 @@ program
     tnt.key = key;
   });
 
+require("../lib/commands/campground")(program, tnt);
+require("../lib/commands/campground-attributes")(program, tnt);
+require("../lib/commands/campground-maps")(program, tnt);
+require("../lib/commands/campground-photos")(program, tnt);
+require("../lib/commands/campgrounds")(program, tnt);
 require("../lib/commands/trailhead")(program, tnt);
 require("../lib/commands/trailhead-attributes")(program, tnt);
 require("../lib/commands/trailhead-maps")(program, tnt);
