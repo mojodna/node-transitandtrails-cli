@@ -1,7 +1,9 @@
 # transitandtrails-cli
 
 I am a command line client for the [Transit
-& Trails](http://www.transitandtrails.org/) API.
+& Trails](http://www.transitandtrails.org/) API. I use
+[`transitandtrails`](https://github.com/mojodna/node-transitandtrails) under
+the hood.
 
 ## Installation
 
