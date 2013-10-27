@@ -28,6 +28,6 @@
   "dependencies": {
     "async": "~0.2.9",
     "commander": "git+https://github.com/mojodna/commander.js#negative-numbers",
-    "transitandtrails": "~0.1.0"
+    "transitandtrails": "~0.1.1"
   }
 }
