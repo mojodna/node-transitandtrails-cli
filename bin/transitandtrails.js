@@ -14,6 +14,12 @@ process.stdout.on("error", function(err) {
   }
 });
 
+// general exception handler (allows all commands to throw errors)
+process.on("uncaughtException", function(err) {
+  console.error(err.stack);
+  process.exit(1);
+});
+
 var tnt = new TransitAndTrails();
 
 program
@@ -41,16 +47,7 @@ require("../lib/commands/trips")(program, tnt);
 require("../lib/commands/user")(program, tnt);
 require("../lib/commands/users")(program, tnt);
 
-try {
-  program.parse(process.argv);
-} catch (e) {
-  if (e instanceof assert.AssertionError) {
-    console.error(e.message);
-    process.exit(1);
-  } else {
-    throw e;
-  }
-}
+program.parse(process.argv);
 
 if (program.args.length === 0) {
   program.help();
